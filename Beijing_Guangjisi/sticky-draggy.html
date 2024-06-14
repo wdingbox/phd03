@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+ 
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Beijing-Guangjisi</title>
+    <!--<base target="_blank">-->
+    <base href="." target="_blank">
+
+ 
+    <script src="./sticky-draggy_files/jquery.js"></script>
+    <script src="./sticky-draggy_files/jquery-ui.js"></script>
+
+    <script src="./sticky-draggy_files/sticky_draggy_on_img.js"></script>
+
+
+
+
+    <!-- Demo styling -->
+
+    <style type="text/css">
+        #LabelHeadLine {
+            position: absolute;
+            width: 1130px;
+            top: 0;
+            float: right;
+        }
+
+        #PMtoggler {
+            float: right;
+        }
+
+        #PopupMenu {
+            position: fixed;
+
+            background-color: lightblue;
+            left: 600px;
+            top: 20px;
+            width: 550px;
+
+            font-size: medium;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+
+
+
+
+<body>
+    <style>
+        .draggy {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            padding-top: 1px;
+            border: 1px solid black;
+            border-width: 2;
+            border-color: rgba(0, 0, 0, 1);
+            border-radius: 0%;
+
+            width: 30px;
+        }
+
+        .draggable_disableed {
+            resize: both;
+            overflow: auto;
+        }
+
+        #draggy_container {
+            position: relative;
+            border: 1px solid gray;
+
+            height: 1000px;
+            width: 800px;
+            left: 10px;
+            top: 10px;
+            margin-top: 0px;
+            z-index: 0;
+        }
+    </style>
+ <img src="./20230416_Guangjisi_turtle_wd.jpg" style="width:500px;">
+
+    
+
+    <div id="PopupMenu" class="ui-draggable ui-draggable-handle">
+        <button id="creator">create</button>
+        <button id="deleter">deleter</button>
+        <button id="backward">z-back</button>
+        <hr>
+        <input type="checkbox" id="draggable" checked="">draggable
+        <hr>
+        <button id="download">download</button>
+        <button id="import2localstore">import</button>
+        <br>
+
+        <textarea id="txa"></textarea><br>
+
+    </div>
+
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            var rdg = new sticky_draggy({ deleterButtonID: "deleter", storename: "stats" })
+            //rdg.localstore_load()
+
+            $("#creator").on("click", function () {
+                rdg.createnew()
+            })
+            $("#download").on("click", function () {
+                rdg.localstore_export(function (txt) {
+                    $("#txa").val(txt)
+                })
+            })
+            $("#import2localstore").on("click", function () {
+                var txt = $("#txa").val()
+                rdg.localstore_import(txt)
+            })
+
+            $("#PopupMenu").draggable({
+                disabled: false,
+            });
+            $("#draggable").on("click", function () {
+                $("#PopupMenu").draggable({
+                    disabled: !$("#draggable").prop("checked"),
+                });
+            })
+            $("#backward").on("click", function () {
+                var zdx = rdg.z_back()
+                $(this).text(`z-idx:${zdx}`)
+            })
+
+
+        })
+
+
+    </script>
+
+
+    <div id="status"></div>
+
+
+
+
+
+
+
+    <script>
+        var localstore =
+        {
+            "0": {
+                "top": 54,
+                "left": 101,
+                "width": "601px",
+                "height": "339px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text-align": "center",
+                "font-size": "16px",
+                "opacity": "1",
+                "background-color": "rgba(0, 0, 0, 0)",
+                "rotate": "none",
+                "writing-mode": "horizontal-tb",
+                "text": "Compound(4000)",
+                "html": "<div>Compound(4000)</div>"
+            },
+            "1": {
+                "top": 186,
+                "left": 267,
+                "width": "277px",
+                "height": "187px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text-align": "center",
+                "font-size": "16px",
+                "opacity": "1",
+                "background-color": "rgba(0, 0, 0, 0)",
+                "rotate": "none",
+                "writing-mode": "horizontal-tb",
+                "text": "standalone(1200)",
+                "html": "<div><br></div><div>standalone(1200)</div>"
+            },
+            "2": {
+                "top": 268,
+                "left": 324,
+                "width": "167px",
+                "height": "86px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text-align": "center",
+                "font-size": "16px",
+                "opacity": "1",
+                "background-color": "rgba(0, 0, 0, 0)",
+                "rotate": "none",
+                "writing-mode": "horizontal-tb",
+                "text": "Elem(500)",
+                "html": "<div>Elem(500)</div>"
+            },
+            "3": {
+                "top": 320,
+                "left": 397,
+                "width": "19px",
+                "height": "21px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text": "31",
+                "html": "31",
+                "text-align": "center",
+                "font-size": "8px"
+            },
+            "4": {
+                "top": 187.85580444335938,
+                "left": 289.4922790527344,
+                "width": "99px",
+                "height": "569px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text-align": "center",
+                "font-size": "16px",
+                "opacity": "0.5",
+                "background-color": "rgb(200, 200, 200)",
+                "rotate": "30deg",
+                "writing-mode": "vertical-lr",
+                "text": "Bronze1400",
+                "html": "<div>Bronze1400<br></div>"
+            },
+            "5": {
+                "top": 251.5679931640625,
+                "left": 234.88482666015625,
+                "width": "425px",
+                "height": "430px",
+                "border-radius": "50%",
+                "z-index": "auto",
+                "text-align": "center",
+                "font-size": "16px",
+                "opacity": "0.7",
+                "background-color": "rgb(90, 90, 90)",
+                "rotate": "-30deg",
+                "writing-mode": "vertical-rl",
+                "text": "Modern10000",
+                "html": "Modern10000"
+            }
+        }
+    </script>
+</body>
+
+</html>

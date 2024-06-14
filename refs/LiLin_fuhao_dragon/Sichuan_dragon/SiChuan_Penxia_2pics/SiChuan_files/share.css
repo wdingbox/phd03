@@ -1,0 +1,48 @@
+.infoBar_W{width:20px; background: url(../img/wechat.png) no-repeat center center;}
+
+#qrcode {
+  display: none;
+  position: fixed;
+  width: 220px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  margin-left: -110px;
+  margin-top: -125px;
+  border: 5px solid #666;
+  background-color: rgba(239,239,239,0.95);
+  border-radius: 2px;
+  box-sizing: content-box;
+  z-index: 1000;
+}
+
+#qrcode span {
+  display: block;
+  clear: both;
+  overflow: auto;
+  width: calc(100% - 10px)!important;
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #868686;
+  padding-left: 10px;
+  box-sizing: content-box;
+}
+
+#qrcode span img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+#qrcodearea {
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  background-color: #bbb;
+  box-sizing: content-box;
+}

@@ -1,0 +1,1386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0058)https://www.shx.chinanews.com.cn/news/2024/0313/97692.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="baidu-site-verification" content="fmUzghxsSF">
+<meta name="baidu-site-verification" content="zCJa1TCw2V">
+<meta name="baidu-site-verification" content="f2d1aJku5G">
+
+<title>毕经纬：商周青铜器龙纹蕴藏着何种文化内涵？_中国新闻网陕西</title>
+
+<link rel="shortcut icon" href="http://f2.shx.chinanews.com/2016images/topcoin2.png" type="image/x-icon">
+<meta content="文化" name="Keywords">
+<meta content="张亨伟 摄　　春秋中期至战国时期，青铜器上最流行的主体纹饰是蟠螭纹和蟠虺纹，皆属于龙纹。受到早期龙文化的强烈影响，商代青铜器上的兽面纹和夔龙纹，是龙纹在商代青铜器上的不同表现形式。" name="Description">
+<meta name="Robots" content="All|None|Index|Noindex|Follow|Nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="./BiJinWei_coiled_dragon_files/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "http://hm.baidu.com/hm.js?3b0ff05f977db0e48286a963974dd159";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<link href="./BiJinWei_coiled_dragon_files/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+<link href="./BiJinWei_coiled_dragon_files/base.css" rel="stylesheet" type="text/css">
+<script src="./BiJinWei_coiled_dragon_files/jquery1.4.js"></script>
+<script src="./BiJinWei_coiled_dragon_files/ScrollPic.js" type="text/javascript"></script>
+<script>
+//搜索
+function quickQueryCust(evt) {
+    evt = (evt) ? evt : ((window.event) ? window.event : "") //兼容IE和Firefox获得keyBoardEvent对象
+    var key = evt.keyCode ? evt.keyCode : evt.which; //兼容IE和Firefox获得keyBoardEvent对象的键值
+    if (key == 13) { //判断是否是回车事件。
+        submitFun();
+    }
+}
+/*请输入关键字*/
+
+function checksubmit() {
+    var code = event.keyCode;
+    if (code == 13) submitFun();
+}
+
+function submitFun() {
+    var hotword = document.getElementsByName('q')[0].value;
+    if (hotword == '') {
+        alert('请输入关键字!');
+        return false;
+    } else {
+        window.open("//sou.chinanews.com/search.do?q=" + encodeURIComponent(hotword) + "&dbtype=hlj");
+    }
+}
+
+//focus
+
+function focusBox(o){
+    //alert(!o);
+    if(!o) return;
+    var w=$("#kakaFocus .banner_pic").width(), $o=$('#'+o),i=0,l=0;arr= [],t= null,
+        $infoLi = $o.find('.banner_info li'), len= $infoLi.length*2,
+        $ul=$o.find('.banner_pic>ul');
+    $ul.append($ul.html()).css({'width':len*w, 'left': -len*w/2});
+    $infoLi.eq(0).addClass('current');
+    //add banner_pages element
+    arr.push('<div class="banner_pages"><ul>');
+    $infoLi.each(function(i){
+        if(i==0){
+            arr.push('<li class="current"><span>'+ (i+1) +'</span></li>');
+        }else{
+            arr.push('<li><span>'+ (i+1) +'</span></li>');
+        }
+    });
+    arr.push('</ul></div>');
+    $o.append(arr.join(''));
+    var $pagesLi = $o.find('.banner_pages li');
+    //mouse
+    $pagesLi.children('span').click(function(){
+        var p = $pagesLi.index($o.find('.banner_pages li.current'));
+        i = $pagesLi.children('span').index($(this));
+        if(i==p) return;
+        l = parseInt($ul.css('left')) + w*(p-i);
+        addCurrent(i,l);
+        return false;
+    })
+    $o.children('a.btn_prev').click(function(){
+        i = $pagesLi.index($o.find('.banner_pages li.current'));
+        (i==0)? i=(len/2-1):i--;
+        l = parseInt($ul.css('left')) + w;
+        addCurrent(i,l);
+        return false;
+    })
+    $o.children('a.btn_next').click(function(){
+        i = ($pagesLi.index($o.find('.banner_pages li.current'))+1)%(len/2);
+        l = parseInt($ul.css('left')) - w;
+        addCurrent(i,l);
+        return false;
+    })
+    //auto focus
+    t = setInterval(init,3000);
+    $o.hover(function(){
+        clearInterval(t);
+    }, function(){
+        t = setInterval(init,3000);
+    });
+    function init(){
+        $o.children('a.btn_next').trigger('click');
+    }
+    //add focus
+    function addCurrent(i,l){
+
+
+        if($ul.is(':animated')) return;
+        $ul.animate({'left':l},500,function(){
+            $o.children('.banner_count').text(i+1);
+            $infoLi.not($infoLi.eq(i).addClass('current')).removeClass('current');
+            $pagesLi.not($pagesLi.eq(i).addClass('current')).removeClass('current');
+            if(l== (1-len)*w){
+                $ul.css({'left': (1-len/2)*w});
+            }else if(l== 0){
+                $ul.css({'left': -len*w/2});
+            }
+        });
+    }
+}
+
+$(document).ready(function(){
+    focusBox('kakaFocus');
+    $("#kakaFocus").mouseover(function(){
+        $("#lrbt_show1").show();
+        $("#lrbt_show2").show();
+        });
+    $("#kakaFocus").mouseout(function(){
+        $("#lrbt_show1").show();
+        $("#lrbt_show2").show();
+        });
+    });
+
+</script>
+
+<style>
+
+.xtime{
+	float: left;
+	width: 200px;
+	height: 21px;
+	margin-right: 14px;
+	margin-top: 47.5px;
+	margin-left: 500px;
+}
+.xtime span{
+	font-size: 16px;
+	font-weight: 400;
+	color: #545454;
+}
+#dataeTime2{
+	margin-left:5px;
+}
+.search{
+	float: left;
+	width: 280px;
+	height: 38px;
+	background: #FEFEFE;
+	border: 1px solid #CECECE;
+	opacity: 0.96;
+	border-radius: 3px;
+	/* overflow: hidden; */
+	box-sizing: border-box;
+	position: relative;
+	margin-top:39px;
+}
+.search .search-cont{
+	width:200px;
+	height: 12px;
+	padding:12px 19px;
+	/* *padding:12px 19px; */
+	outline:0px;
+	font-size: 12px;
+	box-sizing:content-box;
+	border:0px;
+}
+#placeHeader{
+	position:absolute;
+	z-index:200000;
+	left:19px;
+	top:8px;
+	width: 154px;
+	/* height: 14px; */
+	font-size: 14px;
+	font-weight: 400;
+	color: #666666;
+}
+#ss{
+	position:absolute;
+	z-index:200000;
+	right:14px;
+	top:5px;
+	height:28px;
+	width:28px;
+	cursor: pointer;
+}
+#ss img{
+	width:100%;
+}
+.pt{
+	float: right;
+	overflow: hidden;
+	width: 160px;
+	height: 100px;
+}
+.pt ul{
+	width:100%;
+	height:100%;
+	overflow: hidden; 
+}
+.pt ul li{
+	width:65px;
+/* 	width:55px\9; */
+	height:100%;
+	float: left;
+	margin-left: 13px;
+	/* transform: scale(.70); */
+}
+.pt ul li img{
+	width:100%;
+	display: block;
+	margin-top:13.5px;
+}
+.pt ul li p{
+	margin-top:4px;
+	width:100%;
+	height: 16px;
+	font-size: 13px;
+	height: 12px\9;
+	font-size: 9px\9;
+	font-weight: 400;
+	color: #545454;
+	text-align:center;
+	display: none;
+}
+.li1{
+	margin-left:29.333333px\9;
+	}
+
+.line{
+	position: absolute;
+	top: 15px;
+	right:0px;
+	width: 1px;
+	height: 40px;
+	background: #AAAAAA;
+	opacity: 0.4;
+}
+/* 广告 */
+.ad{
+	width:1200px;
+	margin:0px auto 30px auto;
+	overflow: hidden;
+	/* display:none; */
+	position: relative;
+}
+
+.ad ul{
+	width:100%;
+	overflow: hidden;
+	height:80px;
+	position: relative;
+}
+.ad ul li{
+	width:100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	overflow: hidden;
+}
+.ad ul li a{
+	width:100%;
+	display:block;
+	float:none;
+	overflow: hidden;
+}
+.ad ul li a img{
+	width:100%;
+	display:block;
+	height:80px;
+	border:none;
+	overflow: hidden;
+}
+
+.ad ul{
+	width:100%;
+	overflow: hidden;
+	height:80px;
+	position: relative;
+}
+.ad ul li{
+	width:100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	overflow: hidden;
+}
+.ad ul li a{
+	width:100%;
+	display:block;
+	float:none;
+	overflow: hidden;
+}
+.ad ul li a img{
+	width:100%;
+	display:block;
+	height:80px;
+	border:none;
+	overflow: hidden;
+}
+.ad div.ad-right{
+width:780px;
+float:right;
+}
+.ad div.ad-left{
+width:400px;
+float: left;
+}
+.ad div.ad-three{
+width:390px;
+}
+.ad div.ad-center{
+margin:0px 15px;
+}
+.links{
+	width:1072px;
+	margin:0 auto;
+	/* text-align:center; */
+	padding-bottom:15px;
+	border-bottom:1px solid #E6E5E5;
+	overflow: hidden;
+}
+.links a{
+	font-size: 12px;
+	font-weight: 400;
+	color: #888888;
+	line-height: 32px;
+	margin-right:23px;
+	float:left;
+}
+.more-link{
+	float:left;
+	width: 74px;
+	height: 17px;
+	outline:none;
+	font-size:10px;
+	line-height:17px;
+	margin-top: 8px;
+	color:#888;
+	font-size:10px;
+	padding:0px;
+}
+.more-link option{
+	color:#888;
+	font-size:10px;
+}
+.article-content table{
+ margin:0 auto;
+}
+ .pictext{
+   text-indent:unset !important;
+   text-align: center !important;
+margin-bottom:10px;
+}
+		.containter{
+			width:100%;
+			margin:0 auto;
+			
+		}
+		.containter .contain{
+			width:1280px;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		/* 新闻列表 */
+		div.contain-left{
+			float: left;
+			width:825px;
+			height:auto;
+		}
+		.list-nav{
+			width:100%;
+			font-size: 16px;
+			font-weight: 400;
+			color: #666666;
+			line-height: 88px;
+		}
+		.list-news ul li .newsImgConts{
+			float: right;
+			width: 666px;
+			height: 90px;
+		}
+		/* 分页 */
+		.on{
+			background-color:#AAAAAA;
+			color:#fff;
+		}
+		/* 中新视频&排行 */
+	div.contain-right{
+		float: right;
+		width:386px;
+		height:auto;
+	}
+	/* 中新视频 */
+	.zxsp-recommend{
+		width:100%;
+		margin-top:40px;
+	}
+	.zx-title{
+		width:100%;
+		border-top:2px solid #db0014;
+	}
+	.zx-title span,.zx-title a{
+		padding-top:15px;
+		font-size: 18px;
+		font-weight: 600;
+		color: #333333;
+		line-height: 57px;
+	}
+	/* 右侧视频 */
+	.right-video ul li p{
+		font-size: 14px;
+		color: #545454;
+		width:188px;
+		height:42px;
+		text-overflow: -o-ellipsis-lastline;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+	.right-video ul li img{
+		width: 188px;
+		height: 125px;
+		display:block;
+		border: none;
+	}
+	.right-video ul li a{
+		position: relative;
+		display: block;
+	}
+	.right-video ul li a img.icon-play{
+		position: absolute;
+		z-index:1000;
+		width:35px !important;
+		height:35px !important;
+		top:43.5px;
+		left:75.5px;
+	}
+	.right-video ul{
+		overflow:hidden;
+	}
+	.right-video ul li{
+		margin-top: 5px;
+		float:left;
+		width:188px;
+		margin-right:5px;
+	}
+		.news-title-img{
+			width:100%;
+			margin-bottom: 14px;
+			overflow:hidden;
+		}
+	.news-title-img img{
+		width: 386px;
+		border:none;
+		height: 258px;
+		/* display:block; */
+	}
+		.news-title-img p{
+			color: #545454;
+			font-size: 14px;
+			margin-left: 5px;
+		}
+
+		/* .list-name ul li:first-child{
+			margin-top: 0px;
+		} */
+		.list-name ul li{
+			margin-top: 15px;
+		}
+		.list-name ul li a{
+			width:100%;
+			display: block;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.square{
+			float: left;
+			margin-right: 9px;
+			font-size: 14px;
+			text-align: center;
+			width: 20px;
+			height: 21px;
+			background: #B5B5B5;
+			color: #FFFFFF;
+			/* box-sizing: border-box; */
+		}
+		.list-name-font{
+			float: left;
+			width: 260px;
+			color: #545454;
+			font-size: 14px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.on{
+			background-color: #EB0000;
+		}
+		.noimg-time{
+			color:#999999;
+			font-size: 14px;
+			margin-top: 12px;
+		}
+		.article-title{
+			font-size: 26px;
+			color: #000000;
+			font-weight: 600;
+		}
+		.vice-title{
+			margin-top: 15px;
+			overflow:hidden;
+		}
+		.vice-title-left span{
+			float: left;
+			font-size: 14px;
+			color: #999999;
+		}
+		.vice-title-right{
+			float:right;
+		}
+		.article-content{
+			margin-top: 15px;
+			margin-bottom:20px;
+			font-size: 16px;
+			color: #333333;
+			line-height: 36px;
+		}
+		/* 相关推荐 */
+		.dian{
+			width: 6px;
+			height: 5px; 
+			font-weight: 600;
+			color: transparent;
+			background: url(/idx/2021/0312/U447P952T3D49F27DT20210312163246.jpg) no-repeat 0 center;
+			margin-right:7px;
+		}
+		.about-recommend{
+			width:100%;
+			overflow: hidden;
+		}
+		.about-recommend ul{
+			width:100%;
+			/* height:96px; */
+			overflow: hidden;
+		}
+		.about-recommend ul li{
+			float:left;
+			width:100%;
+			overflow: hidden;
+		}
+		.about-recommend ul li a{
+			font-size: 14px;
+			font-weight: 400;
+			color: #545454;
+			line-height: 32px;
+			overflow: hidden;
+			margin-right:10px;
+		}
+
+		.statement{
+			width:775px;
+			padding:32px 25px;
+			overflow: hidden;
+			background: #F6F6F6;
+			margin-top:30px;
+		}
+		.statement h4{
+			font-size: 16px;
+			font-weight: 400;
+			color: #000000;
+			line-height: 24px;
+		}
+		.statement p{
+			font-size: 12px;
+			color: #545454;
+			line-height: 24px;
+		}
+		#sp_pc{
+			width:100%;
+			margin:15px auto;
+		}
+		#dgqlayer,html5video{
+			text-align:center;
+			margin: 0px auto;
+		}
+		/* 内容 */
+		.article-content p{
+			font-size: 18px;
+			font-family: Microsoft YaHei;
+			font-weight: 400;
+			color: #333333;
+			line-height: 42px;
+margin-top:18px;
+		}
+		.img_wrapper{
+			max-width: 700px;
+			margin: 22px auto 0px auto;
+			text-align:center;
+		}
+		.img_wrapper img{
+			max-width: 700px;
+			margin: 0px auto;
+			text-align:center;
+			width:700px;
+		}
+		
+		.incont_ybt h3{
+			font-weight: normal;
+			font-family: "微软雅黑";
+			font-size: 14px;
+			line-height: 26px;
+			color:  #333333;
+		}
+		.incont_ybt h3 a{
+			color: #247DC8;
+		}
+		.incont_ybt{
+		    clear: both;
+		    width:800px;
+		    margin: 10px 0px 10px 0px;
+		}
+		.incont_ybt h3 a:hover {
+		    text-decoration: underline;
+		}
+		.top{
+			 display:none;
+			 width:100%;
+		}
+		.top_nav{
+			width:100%;
+			line-height:52px;
+			text-align:center;
+			background-color: #d90916;
+			overflow: hidden;
+			height: 52px;
+			background:
+		}
+		.top_nav a,.top_nav{
+			font-size: 22px;
+			font-family: 微软雅黑;
+			color: #fff;
+			text-decoration: none;
+		}
+.article-content table{
+ margin:0 auto;
+}
+/*substation*/
+.substation{height: 49px; line-height: 49px; border-bottom: 1px solid #f5f5f7; color: #b8b8b8;}
+.substation a{ color: #b8b8b8;padding: 0px 2px;}
+
+/*top*/
+#topc{height: 178px; margin: 0 auto; width: 100%; background: url(http://www.shx.chinanews.com/idx/2023/1130/U194P10T114D1F3408DT20231130133538.jpg) no-repeat center top;}
+#topc .logo{width:294px; height:73px; margin-top: 43px;}
+
+.searchinput{width:214px;float:right; margin-top: 63px; margin-right: 22px;}
+.searchinput .search_input{border:1px solid #e5dacf;border-right:none;width:164px;height:38px;padding:0 0 0 10px;background:#fff;color:#a8a8a8;line-height:38px;float:left;border-radius:10px 0 0 10px}
+.searchinput .search_a{line-height:38px;text-align:center;color:#a8a8a8;background:url(https://image.cns.com.cn/default/5ddb9ec3/20231113/images/search.png) no-repeat 0;float:left;display:block;width:38px;height:38px;text-decoration:none;font-size:0;border:1px solid #e5dacf;border-left:none;border-radius:0 10px 10px 0}
+
+.logo_right{float:right;width:224px; margin-top: 63px; }
+.logo_right .icon{float:left;height:26px;padding:32px 10px 0;line-height:26px;text-align:center;border:1px solid #fff;font-size:12px}
+.logo_right .icon.wap{background:url(https://image.cns.com.cn/default/5ddb9ec3/20231113/images/wap.png) no-repeat center 6px}
+.logo_right .icon.app{background:url(https://image.cns.com.cn/default/5ddb9ec3/20231113/images/app.png) no-repeat center 6px}
+.logo_right .icon.weibo{background:url(https://image.cns.com.cn/default/5ddb9ec3/20231113/images/weibo.png) no-repeat center 6px}
+.logo_right .icon.gzh { background: url(https://image.cns.com.cn/default/5ddb9ec3/20231113/images/weixin.png) no-repeat center 6px;position: relative;display: inline-block;}
+.logo_right .icon.gzh .cnswx_show{display: none; position: absolute; top: 60px; left: -68px; width: 120px; height: 120px; z-index: 2;}
+.logo_right .icon.gzh:hover .cnswx_show{display: block;}
+
+/*nav*/
+#nav2{width: 100%; height: 68px; line-height: 68px; background: #f5f5f7; border-top: 2px solid #da0010; font-size: 17px;}
+#nav2 li{float: left;}
+#nav2 li+li{margin-left: 35px;}
+
+/*headlines*/
+.headlines {margin: 24px 0;text-align: center;}
+.xwzxdd-dbt,.xwzxdd-dbt a {font-size: 40px; line-height: 60px;color: #333333;}
+.xwzxdd-xbt,.xwzxdd-xbt a { line-height: 40px; padding-top: 0; color: #a1a1a1;}
+
+/*tonglan*/
+.tonglan img{width: 1280px; height: 100px;}
+
+/*yw*/
+#yw{background: #f5f5f7;}
+.yw_left{width:845px ;}
+.yw_right{width: 405px; margin-right: 10px; margin-top: 15px;}
+.banner{position:relative;width:845px;height:480px;overflow:hidden;margin:0 auto;}
+.banner_pic{position:absolute;width:845px;height:480px;overflow:hidden; left:0; top:0;}
+.banner_pic ul{position:absolute;top:0;left:0;width:99999px;height:480px}
+.banner_pic ul li{float:left;width:845px}
+.banner_pic ul li img{width:845px;height:480px;}
+.banner a.btn_prev,.banner a.btn_next{display:block;width:14px;height:29px;overflow:hidden;margin-top:0;text-indent:-9999px;outline:0;hide-focus:expression(this.hideFocus=true);position:absolute;bottom:15px;z-index:9}
+.banner a.btn_prev{left:15px;background:url(//image.cns.com.cn/default/5ddb9ec3/20231113/images/focus_l1.png) no-repeat center;}
+.banner a.btn_next{right:15px;background:url(//image.cns.com.cn/default/5ddb9ec3/20231113/images/focus_r1.png) no-repeat center;}
+.banner a.btn_prev:hover;{background:url(//image.cns.com.cn/default/5ddb9ec3/20231113/images/focus_l2.png) no-repeat center;}
+.banner a.btn_next:hover{background:url(//image.cns.com.cn/default/5ddb9ec3/20231113/images/focus_r2.png) no-repeat center;}
+.banner_info_bg{position:absolute;bottom:0px;left:0px;width:845px;height:164px;overflow:hidden;background:url(//image.cns.com.cn/default/5ddb9ec3/20231113/images/focus_bg.png) repeat-x center;}
+.banner_info{position:absolute;bottom:0px;left:0px;width:845px;/*height:40px;*/overflow:hidden;z-index:2;text-align:center;}
+.banner_info li{display:none;padding:0 10px;line-height:60px;height:60px;overflow:hidden; color:#fff; font-size: 22px;}
+.banner_info li.current{display:block}
+.banner_info li a{color:#fff;font-size:22px;font-family:microsoft yahei;text-decoration:none}
+.banner_pages{position:absolute;right:20px;bottom:10px;overflow:hidden; width:auto;height:29px;  z-index: 10; display: none;}
+/*.banner_pages ul{float:left;}
+.banner_pages li{float:left;margin-left:10px; margin-top:10px;display:block;width:14px;height:14px;overflow:hidden;}
+.banner_pages li span{display:block;width:14px;height:14px;overflow:hidden;background:url(//www.chinanews.com/fileftp/2018/01/2018-01-03/U435P4T47D41072F24534DT20180104150212.png) no-repeat;_background:url(//i6.chinanews.com/2013/home///image.cns.com.cn/default/5ddb9ec3/20231113/images/white.gif) no-repeat;text-indent:-9999px;cursor:pointer}
+.banner_pages li span:hover{background:url(//www.chinanews.com/fileftp/2018/01/2018-01-03/U435P4T47D41073F24534DT20180104150151.png) no-repeat;display:block;width:14px;height:14px;overflow:hidden;}
+.banner_pages li.current span,.banner_pages li.current span:hover{background:url(//www.chinanews.com/fileftp/2018/01/2018-01-03/U435P4T47D41073F24534DT20180104150151.png) no-repeat;display:block;width:14px;height:14px;overflow:hidden;}*/
+
+.module_topcon_ul div{line-height:30px;overflow:hidden;text-align:left;height: 30px; overflow: hidden; width: 405px; white-space: nowrap; text-overflow: ellipsis;}
+.module_topcon_ul div.bold{font-size:18px;font-weight:bold;text-align:left;line-height:38px;height: 38px; }
+.module_topcon_ul div.bold a{font-size:18px}
+.module_topcon_ul div.line{height:15px;line-height:15px;margin-bottom:15px; border-bottom: 1px dashed #868686;}
+
+/*news1*/
+.news_div1{width: 413px; float: left; margin-right: 20px;}
+.news_div2{width: 413px; float: right;}
+.news_div3{width: 846px; float: left;}
+
+/*lm_bt*/
+.lm_bt{width: 100%; height: 44px; line-height: 44px; color: #da0010; font-size: 21px; background: url(http://image.cns.com.cn/default/5ddb9ec3/20231113/images/lmbt_bg1.jpg) repeat-x bottom center; font-weight: bold; margin-bottom: 15px;}
+.lm_bt a{color: #da0010; font-size: 21px; background: url(http://image.cns.com.cn/default/5ddb9ec3/20231113/images/lmbt_bg2.jpg) repeat-x bottom center;height: 44px; display: inline-block;}
+.lm_bt a:hover{text-decoration: none;}
+
+.module_top_tuwen{margin-bottom:14px;}
+.module_top_tuwen .leftimg{float:left;width:187px;height:106px;overflow:hidden; margin-right: 20px;}
+.module_top_tuwen .leftimg img{width:187px;height:106px}
+.module_top_tuwen .righttext{padding:10px 0;float:left;width:188px;height:86px;line-height:26px;font-size:18px;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.lanmu_ul{line-height:38px;}
+.lanmu_ul li{padding-left:15px;background:url(http://image.cns.com.cn/default/5ddb9ec3/20210723/12.jpg) no-repeat 0;clear:both;line-height:38px;height:38px;overflow:hidden;width:400px;white-space:nowrap;text-overflow:ellipsis}
+
+.lanmu_ul_1{line-height:39px;}
+.lanmu_ul_1 li{padding-left:15px;background:url(http://image.cns.com.cn/default/5ddb9ec3/20210723/12.jpg) no-repeat 0;clear:both;line-height:39px;height:39px;overflow:hidden;width:400px;white-space:nowrap;text-overflow:ellipsis}
+
+.zxsp_div{float: left;width:187px; margin: 0 9px;}
+.zxsp_div img{width:187px;height:106px}
+.zxsp_div p{line-height: 30px; overflow:hidden;width:187px;white-space:nowrap;text-overflow:ellipsis;font-weight: bold; margin: 8px 0;}
+.lanmu_ul_sp{line-height:38px;}
+.lanmu_ul_sp li{padding-left:25px;background:url(http://image.cns.com.cn/default/5ddb9ec3/20231113/images/sp_icon.png) no-repeat 0;clear:both;line-height:38px;height:38px;overflow:hidden;width:390px;white-space:nowrap;text-overflow:ellipsis}
+
+/*guntu*/
+.zt_div{border-bottom: #f5f5f7 2px solid; width: 844px; height: 150px ; position:relative;}
+#LeftArrpic_zt{top:-40px; position:absolute; z-index:2; right:30px; cursor: pointer;}
+#RightArrpic_zt{clear:right;height:44px;top:-40px; text-align:right; position:absolute; right:0px;padding-left:0px; z-index:2; cursor: pointer;}
+.gun_img_zt{width:844px; margin-left:0px; overflow:hidden; text-align:center;padding-top:0px; z-index:1;}
+.gun_img_zt .zu-ku{margin-top: 0px; float: left;  width: 288px;  height: 146px; text-align: center;display:inline-block;}
+.gun_img_zt .zu-ku img{width:268px; height:106px; text-align: left;}
+.gun_img_zt .zu-ku p{ height: 40px; line-height: 40px; overflow: hidden; text-align: center ; width:268px ; }
+
+.ztr_ad,.ztr_ad img{width: 413px; height: 200px;}
+
+/*tsphoto*/
+.ts_photo_big{float: left; width: 506px; height: 285px; position: relative; margin-right: 5px;}
+.ts_photo_big img{ width: 506px; height: 285px;}
+.ts_photo_big .bg{position: absolute; left: 0; bottom: 0; z-index: 2;  height: 40px; width: 100%;background: #000;filter: Alpha(Opacity=70);opacity: 0.7;}
+.ts_photo_big .txt{position: absolute; left: 0; bottom: 0; z-index: 3;  height: 40px; padding: 0 10px; width: 486px; overflow: hidden; line-height: 40px; color: #fff; text-align: center;}
+.ts_photo_big .txt a{color: #fff;}
+.ts_photo_r{float: right; width: 256px;}
+.ts_photo_small{ width: 256px; height: 140px; position: relative; margin-bottom: 5px;}
+.ts_photo_small img{ width: 256px; height: 140px;}
+.ts_photo_small .bg{position: absolute; left: 0; bottom: 0; z-index: 2;  height: 40px; width: 100%;background: #000;filter: Alpha(Opacity=70);opacity: 0.7;}
+.ts_photo_small .txt{position: absolute; left: 0; bottom: 0; z-index: 3;  height: 40px; padding: 0 10px; width: 236px; overflow: hidden; line-height: 40px; color: #fff; text-align: center;}
+.ts_photo_small .txt a{color: #fff;}
+
+
+/*lm_img*/
+.lm_img {width: 413px;height: 235px;position: relative;overflow: hidden;}
+.lm_img img { width: 100%;height: 100%;object-fit: cover;}
+.lm_img .title {color: #fff;font-size: 18px;font-weight: bold;width: 415px;position: absolute;bottom: 0;background: #000;filter: Alpha(Opacity=70);opacity: 0.7;padding: 10px;text-align: left;line-height: 30px;}
+
+/*lm_ul*/
+.lm_ul{height: 155px;overflow: hidden;padding-top:10px;}
+.lm_ul li{line-height: 40px;text-align: left;}
+.lm_ul li em {background: url(https://image.cns.com.cn/default/5ddb9ec3/20210723/12.jpg) no-repeat 0;width: 10px;height: 10px;float: left;margin-top: 18px;padding: 0 5px; }
+
+/*lm2_bt*/
+.lm2_bt{width: 100%; height: 43px; line-height: 43px; color: #da0010; font-size: 21px; background: #f8f8f8;font-weight: bold;border-bottom: 1px solid #ffffff;}
+.lm2_bt a{color: #da0010; font-size: 21px; background: #f8f8f8;height: 43px; display: inline-block;}
+.lm2_bt a:hover{text-decoration: none;}
+
+/*lm2_ul*/
+.lm2_ul{padding-top: 15px;}
+.lm2_ul li {width: 190px;float: left;margin-right: 10px;}
+.lm2_ul li .lm2_img img{width: 187px;height: 105px;margin: 0 auto;}
+.lm2_ul li .lm2_title {padding-top: 10px;line-height: 20px;overflow: Hidden;font-size: 14px;text-align: center;width: 190px;}
+
+/*gg1_img*/
+.gg1_img img{width: 388px;height: 200px;margin-top: 3px;}
+
+/*tuwen*/
+.tuwen{padding-top:15px;height: 150px;}
+.tuwen .leftimg {float:left;width: 230px;height: 140px;overflow: hidden;}
+.tuwen .righttext1 {float: right;padding: 5px 15px;width: 140px;height: 45px;}
+.tuwen .righttext2 {float: right;padding: 5px 15px;width: 140px;height: 80px;font-size: 14px;}
+
+/*gg2_img*/
+.gg2_img img{width: 413px;height: 90px;margin-top: 15px;margin-bottom: 20px;}
+
+/*gg3_img*/
+.gg3_img img{width: 846px;height: 90px;margin-top: 15px;margin-bottom: 20px;}
+
+/*lm3_text*/
+.lm3_text1 {float: right;padding: 5px 12px;width: 405px;height: 20px;font-size: 16px;}
+.lm3_text2 {float: right;padding: 5px 12px;width: 405px;height: 45px;font-size: 14px;}
+
+/*dlyL*/
+.dlyL1 { width: 73px;height: 25px;float: right;margin-right: -30px;margin-top: 15px;position: absolute;right: 0;top: 13px;}
+.dlyL1 b {width: 16px; height: 17px;display: block;cursor: pointer; float: left;}
+.swiper {width: 100%;height: 260px;}
+.swiper-button-prev{left:0;}
+.swiper-button-next{position: absolute;right: 30px;}
+.swiper-button-next:after, .swiper-button-prev:after{font-family: "";content:"";}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{opacity: 0.6;}
+
+/*tuwen2*/
+.tuwen2 {float: left;width: 270px;height: 210px;position: relative;padding: 0;border: 0 solid transparent;margin-right: 18px;}
+.tuwen2 img {width: 270px;height: 150px;}
+.tuwen2 .text { padding: 5px 10px 15px;font-size: 16px;line-height: 24px;
+}
+
+/* links */
+.links_title{height:40px;line-height: 40px;color: #464646;font-size: 18px;font-weight: bold;}
+.links {line-height: 25px;font-size:14px;}
+.links span {padding: 0 10px;}
+
+/* zxjz */
+.zxjz{height: 85px;border:1px solid #e2e2e2;box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 10px 0px 10px rgba(0, 0, 0, 0.1); margin-top: 30px;margin-bottom: 10px; background: url(images/bg_rb.png) no-repeat bottom right;}
+.zxjz .top {height: 85px;width: 100%;}
+.top .left_text{width:155px;color: #d70508; line-height: 85px;text-align: center;font-size: 20px;font-weight: 700;float: left;}
+.top .right_link{width:1120px;background: url(images/zxjz_top.png) no-repeat;float: right;}
+.right_link img{height: 33px;width:98px;margin-left:55px;margin-top:25px;margin-bottom: 30px;}
+.zxjz .left_tuwen{width:50%;margin-left: 25px;float: left;}
+.left_tuwen .text1{height: 40px;font-size: 22px;line-height: 40px;margin-top: 15px; font-weight: 700;}
+.left_tuwen .text2{height: 50px;font-size: 16px;margin-top: 5px;margin-left: 10px;}
+.left_tuwen .ckxx{width: 150px;margin-top: 20px;padding-left: 10px;margin-bottom: 30px;}
+.left_tuwen .lunbobody{width: 605px;margin-left: 10px;}
+.left_tuwen .lunbo{width:100px;position: absolute;height: 65px;left: 545px;bottom: 15px}
+.zxjz .right_text{width:45%;height: 400px;float: right;}
+
+/*tuwen2*/
+.tuwen3 {margin-left: 15px;width: 300px;height: 210px;float: left;}
+.tuwen3 img {width: 285px;height: 160px;}
+.tuwen3 .text { padding: 5px 20px 15px;font-size: 16px;line-height: 24px;}
+
+.swiper1 {overflow: hidden;position: relative;}
+
+/*base*/
+.news_div1{width: 413px; float: left; margin-right: 20px;}
+.news_div2{width: 413px; float: right;}
+.news_div3{width: 846px; float: left;} 
+.hui{background: #f8f8f8;padding-left:13px;width: 400px;}
+
+
+
+/*pagebottom*/    
+.pagebottom{margin:20px auto 0;padding-top:0px;width:100%;font-size:14px;background:#f9f9f9;}
+.pagebottom_nav{width:1280px;margin:0 auto;height:46px;line-height:46px;text-align:center;font-size:18px;}
+.pagebottom_nav span{padding:0 10px}
+.pagebottom_nav li{float:left;padding:20px 40px 0px}
+.pagebottom_nr{color:#8d8d8d;background-color:#f9f9f9;padding-top:0px}
+.pagebottom_nr a{color:#8d8d8d;text-decoration:none}
+.pagebottom_nr a:hover{color:#8d8d8d;text-decoration:none;}
+.pagebottom .des{line-height:32px;text-align:center;font-size:14px;display: inline-block;width:100%;}
+.links2{
+	width:1280px;
+	margin-top:30px;
+	text-align:center;
+	padding-bottom:15px;
+	border-bottom:1px solid #E6E5E5;
+	overflow: hidden;
+}
+		/* 移动端 */
+		@media screen and (max-width: 780px) {
+			 .list-nav,
+			 .header-nav,
+			 #nav2,
+			 #topc,
+			 .mt10,
+			 .pagebottom,
+			 .substation,
+			 .contain-right,
+			 .footer,
+			 .vice-title-right{
+				 display:none!important;
+			 }
+			  .vice-title-right{
+				 display:none!important;
+			 }
+			 
+			  .about-recommend{
+				 width:100%;
+			 }
+			 
+			 html{
+				 min-width:100%!important;
+				 width:100%!important;
+			  }
+			  .containter .contain{
+				  box-sizing:border-box;
+				  padding:10px;
+			  }
+			 .containter .contain,div.contain-left,.incont_ybt{
+				 width:100%;
+			  }
+			  .article-title{
+				  font-size:22px;
+				  white-space:normal;
+				  text-align:left;
+                  font-weight:600;
+			  }
+			  .vice-title{
+				  width:100%;
+				  text-align:center;
+			  }
+			 .top{
+				 display:block;
+			 }
+			 .statement{
+				 width:100%;
+				 box-sizing: border-box; 
+			 }
+			 
+			 .vice-title-left{
+				 width:100%;
+				 text-align:center;
+			 }
+			 .vice-title-left span{
+				 float:none;
+			 }
+			 #html5video,video{
+				 width:100%;
+			 }
+			 .article-content{
+				 margin-top:10px;
+			 }
+                          .img_wrapper{
+				 width:100%;
+			 }
+			 .img_wrapper img{
+			 	width:100% !important;
+			 }
+			 .article-content img{
+				 width:100%;
+			 }
+                   .article-content table{
+		       width:auto !important;
+		          margin:0 auto;
+		       }
+		
+	</style>
+</head>
+<body>
+
+ 
+<div class="substation">
+  <div class="w1280 m_center">
+    <a href="https://www.ah.chinanews.com.cn/">安徽</a>|<a href="https://www.bj.chinanews.com.cn/">北京</a>|<a href="https://www.cq.chinanews.com.cn/">重庆</a>|<a href="https://www.fj.chinanews.com.cn/">福建</a>|<a href="https://www.gs.chinanews.com.cn/">甘肃</a>|<a href="https://www.gz.chinanews.com.cn/">贵州</a>|<a href="https://www.gd.chinanews.com.cn/">广东</a>|<a href="https://www.gx.chinanews.com.cn/">广西</a>|<a href="https://www.hi.chinanews.com.cn/">海南</a>|<a href="https://www.heb.chinanews.com.cn/">河北</a>|<a href="https://www.ha.chinanews.com.cn/">河南</a>|<a href="https://www.hb.chinanews.com.cn/">湖北</a>|<a href="https://www.hn.chinanews.com.cn/">湖南</a>|<a href="https://www.hlj.chinanews.com.cn/">黑龙江</a>|<a href="https://www.js.chinanews.com.cn/">江苏</a>|<a href="https://www.jx.chinanews.com.cn/">江西</a>|<a href="https://www.jl.chinanews.com.cn/">吉林</a>|<a href="https://www.ln.chinanews.com.cn/">辽宁</a>|<a href="https://www.nmg.chinanews.com.cn/">内蒙古</a>|<a href="https://www.nx.chinanews.com.cn/">宁夏</a>|<a href="https://www.qh.chinanews.com.cn/">青海</a>|<a href="https://www.sd.chinanews.com.cn/">山东</a>|<a href="https://www.sx.chinanews.com.cn/">山西</a>|<a href="https://www.shx.chinanews.com.cn/">陕西</a>|<a href="https://www.sh.chinanews.com.cn/">上海</a>|<a href="https://www.sc.chinanews.com.cn/">四川</a>|<a href="https://www.tj.chinanews.com.cn/">天津</a>|<a href="https://www.xj.chinanews.com.cn/">新疆</a>|<a href="https://www.bt.chinanews.com.cn/">兵团</a>|<a href="https://www.yn.chinanews.com.cn/">云南</a>|<a href="https://www.zj.chinanews.com.cn/">浙江</a>
+</div>
+</div>
+<div id="topc">
+  <div class="w1280 m_center">
+    <div class="logo left"><a href="https://www.shx.chinanews.com/" target="_blank"><img src="./BiJinWei_coiled_dragon_files/U194P10T114D1F3408DT20231213145426.png" width="295" height="79"></a></div>
+    <div class="logo_right">
+      <a href="https://www.shx.chinanews.com.cn/news/2024/0313/target=" https:="" m.chinanews.com="" "="" target="blank" class="icon wap">移动版</a>
+      <a href="https://www.chinanews.com.cn/app/chinanews/index.shtml" target="blank" class="icon app">客户端</a>
+      <a href="https://weibo.com/u/5732202751" target="blank" class="icon weibo">微博</a>
+      <!--<a href="" class="icon gzh">公众号</a>-->
+      <div class="icon gzh">公众号<div class="cnswx_show"><img src="./BiJinWei_coiled_dragon_files/cns2012.png" alt="" width="120"></div></div>
+    </div>
+    <div class="searchinput" id="zxss">
+      <input type="text" value="请输入关键字" onclick="this.value=&#39;&#39;,this.style.color=&#39;#000&#39;" name="q" class="search_input" onkeydown="return quickQueryCust(event)">
+      <a class="search_a" onclick="submitFun()">搜 索</a>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="nav2">
+  <div class="w1280 m_center">
+    <ul>
+    <li><a href="http://www.shx.chinanews.com/" target="blank">首页</a></li><li><a href="http://www.shx.chinanews.com.cn/jzyx.html" target="blank">记者一线</a></li><li><a href="http://www.shx.chinanews.com.cn/szjj.html" target="blank">时政经济</a></li><li><a href="http://www.shx.chinanews.com.cn/sxxw.html" target="blank">市县新闻</a></li><li><a href="http://www.shx.chinanews.com.cn/kjww.html" target="blank">文化旅游</a></li><li><a href="http://www.shx.chinanews.com.cn/shfz.html" target="blank">社会法制</a></li><li><a href="http://www.shx.chinanews.com.cn/shmj.html" target="blank">同心陕西</a></li><li><a href="http://www.shx.chinanews.com.cn/zxsp.html" target="blank">中新视频</a></li><li><a href="http://www.shx.chinanews.com.cn/ztbd.html" target="blank">教育科技</a></li><li><a href="http://www.shx.chinanews.com.cn/mtsp.html" target="blank">媒体时评</a></li><li><a href="http://www.shx.chinanews.com.cn/ylty.html" target="blank">娱乐体育</a></li><li><a href="http://www.shx.chinanews.com.cn/sssh.html" target="blank">生活资讯</a></li><li><a href="http://www.shx.chinanews.com.cn/zltx.html" target="blank">健康医疗</a></li>
+  </ul>
+  </div>
+</div> 
+
+<!-- 移动端 -->
+	<!-- 内容 -->
+	<div class="top">
+	<a href="http://www.shx.chinanews.com/"></a><div class="top_nav" style="background-image: url(&quot;http://www.chinanews.com/static/media/bg1.edf3a98c.png&quot;);background-repeat: round;"><a href="http://www.shx.chinanews.com/">
+  <div align="left"><img src="./BiJinWei_coiled_dragon_files/mtop1.png" width="220" height="48"></div></a>
+	 </div>
+	</div>
+	<div class="containter">
+		<div class="contain">
+			<!-- 新闻列表 -->
+			<div class="contain-left">
+				<h3 class="list-nav">首页 &gt; 文化旅游</h3>
+				<div class="article-title">
+					毕经纬：商周青铜器龙纹蕴藏着何种文化内涵？
+				</div>
+				<div class="vice-title">
+					<div class="vice-title-left">
+						<span>2024年03月13日 09:44</span>
+						<a href="https://www.chinanews.com.cn/gn/2024/03-12/10178934.shtml"><span style="margin-left: 20px;">中国新闻网</span></a>
+					</div>
+					<div class="vice-title-right">
+						<div class="x-bdshare">
+
+
+						</div>
+					</div>
+				</div>
+				<div class="article-content" deep="3">
+					
+					 
+					<div id="sp_pc">
+					    
+					</div>
+                  
+
+<p>　　中新社西安3月12日电 题：商周青铜器龙纹蕴藏着何种文化内涵？</p>
+
+<p>　　——专访陕西师范大学历史文化学院教授毕经纬</p>
+
+<p>　　中新社记者 阿琳娜</p>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "></div>
+
+<div class="img_wrapper"><img src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093421.jpg"></div>
+
+<p>　　中国的龙文化起源甚早，商周青铜器上的龙纹蕴含着何种文化内涵？为何说龙纹是商周青铜器上具有“统治地位”的纹饰？陕西师范大学历史文化学院教授毕经纬近日就此接受中新社“东西问”专访进行解答。</p>
+
+<p>　　<strong>现将访谈实录摘要如下：</strong></p>
+
+<p>　　<strong>中新社记者：商周青铜器上流行哪些纹饰？这些纹饰与龙有何关联？</strong></p>
+
+<p>　　<strong>毕经纬：</strong>公元前2000年前后，中国已进入青铜时代。至商代晚期，青铜器铸造工艺不断进步，中国青铜文明的第一个高峰随之到来，并延续至西周早期。西周中期以后，青铜器应用逐渐世俗化。春秋晚期以后，青铜器的世俗化更加明显，开始成为贵族阶层彰显身份和财富的工具，加上锋利的铁质錾刻工具普及，大量精美绝伦的错金银、镶嵌红铜和人物画像纹青铜器得以出现，从而形成了中国青铜文明的第二个高峰。战国以后，随着铁器、原始瓷器和漆器的兴起，青铜器逐渐衰落。</p>
+
+<div class="img_wrapper"><img alt="河南安阳妇好墓出土商代晚期龙纹青铜盘线图。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093454.jpg" title="河南安阳妇好墓出土商代晚期龙纹青铜盘线图。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">河南安阳妇好墓出土商代晚期龙纹青铜盘线图。受访者供图</span></div>
+
+<p>　　就目前的考古发现而言，早期的青铜器纹饰大多是简单线条组成的几何纹样。商代至西周早期，青铜器上最流行的纹饰是兽面纹、夔龙纹和鸟纹。西周中期至春秋早期，兽面纹大幅度减少，而顾首龙纹增多，同时还流行新出现的窃曲纹、波曲纹、垂鳞纹和重环纹(横鳞纹)等抽象纹样。至春秋中期，前期流行的抽象纹样衰落，蟠螭纹迅速流行。春秋晚期以后，除蟠螭纹继续流行外，还盛行蟠虺纹。</p>
+
+<div class="img_wrapper"><img alt="商代晚期青铜器兽面纹线图。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093513.jpg" title="商代晚期青铜器兽面纹线图。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">商代晚期青铜器兽面纹线图。受访者供图</span></div>
+
+<p>　　仔细观察可发现，这些纹饰多与龙密切相关。除夔龙纹及由龙纹变形所形成的窃曲纹和蟠螭纹外，流行于商代至西周早期青铜器上的兽面纹，实际上是两只吻部向下的夔龙组成的，属于一首双身的夔龙纹。西周中期以后流行的波曲纹是龙之躯干的抽象，垂鳞纹和重环纹是龙之鳞片的抽象。春秋晚期以后流行的蟠虺纹实际上是蟠螭纹的缩小版或缩略版。</p>
+
+<p>　　概言之，商周青铜器上最流行的九种主体纹饰，除鸟纹外的兽面纹、夔龙纹、波曲纹、窃曲纹、垂鳞纹、重环纹、蟠螭纹、蟠虺纹等八种纹饰，皆与龙纹密切相关。</p>
+
+<div class="img_wrapper"><img alt="兽面纹簋，西周，山西考古研究所藏。孙新明 摄" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093535.jpg" title="兽面纹簋，西周，山西考古研究所藏。孙新明 摄"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">兽面纹簋，西周，山西考古研究所藏。孙新明 摄</span></div>
+
+<p>　　<strong>中新社记者：为何说龙纹是商周青铜上占“统治地位”的纹饰？</strong></p>
+
+<p>　　<strong>毕经纬：</strong>关于这个问题，可以分时段来说明。</p>
+
+<p>　　商代至西周早期，青铜器上最流行的主体纹饰依次是兽面纹、夔龙纹和鸟纹，其中兽面纹占据绝对优势，再加上数量较多的夔龙纹，这一时期以龙纹作为主体纹饰的青铜器应占大多数。</p>
+
+<p>　　西周中期至春秋早期，青铜器上最流行的主体纹饰依次是窃曲纹、重环纹、垂鳞纹、波曲纹、顾首龙纹和垂冠大鸟纹等六种，其中前五种与龙纹密切相关。</p>
+
+<div class="img_wrapper"><img alt="西周大克鼎颈部饰有三组对称的变形饕餮纹，相接处有突出的棱脊，凡六出；腹部饰一条两方连续的大窃曲纹(即波曲纹)，环绕全器一周。鼎足上部另饰有突出的饕餮形象三组。鼎耳饰有相对的龙纹。张亨伟 摄" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093802.jpg" title="西周大克鼎颈部饰有三组对称的变形饕餮纹，相接处有突出的棱脊，凡六出；腹部饰一条两方连续的大窃曲纹(即波曲纹)，环绕全器一周。鼎足上部另饰有突出的饕餮形象三组。鼎耳饰有相对的龙纹。张亨伟 摄"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">西周大克鼎颈部饰有三组对称的变形饕餮纹，相接处有突出的棱脊，凡六出；腹部饰一条两方连续的大窃曲纹(即波曲纹)，环绕全器一周。鼎足上部另饰有突出的饕餮形象三组。鼎耳饰有相对的龙纹。张亨伟 摄</span></div>
+
+<p>　　春秋中期至战国时期，青铜器上最流行的主体纹饰是蟠螭纹和蟠虺纹，皆属于龙纹。</p>
+
+<div class="img_wrapper"><img alt="散虺纹簋，春秋，山西博物院藏。孙新明 摄" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093837.jpg" title="散虺纹簋，春秋，山西博物院藏。孙新明 摄"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">散虺纹簋，春秋，山西博物院藏。孙新明 摄</span></div>
+
+<p>　　而且，即使在鸟纹最为流行的商代晚期至西周早期，鸟纹的总量也远少于兽面纹和夔龙纹。不仅如此，商周青铜器上的众多立体装饰也与龙关系密切，比如两周时期鼎足根部的兽面纹、器物耳部的兽首、器身上的铺首与爬龙、器盖上的盘龙等。因此，可以毫不夸张地说，龙纹在商周青铜器主体纹饰中占据绝对的统治地位，是中国青铜时代最重要的纹样。</p>
+
+<div class="img_wrapper"><img alt="　湖北随州叶家山出土西周早期盘龙盖青铜罍。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093903.jpg" title="　湖北随州叶家山出土西周早期盘龙盖青铜罍。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">湖北随州叶家山出土西周早期盘龙盖青铜罍。受访者供图</span></div>
+
+<div class="img_wrapper"><img alt="四川广汉三星堆出土商代晚期觚形青铜尊盖部爬龙。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093921.jpg" title="四川广汉三星堆出土商代晚期觚形青铜尊盖部爬龙。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">四川广汉三星堆出土商代晚期觚形青铜尊盖部爬龙。受访者供图</span></div>
+
+<p>　　龙形象的多变性，主要缘于龙的幻想属性。商周时期龙的形象尚未固定。《管子·水地》称龙“欲小则化如蚕蠋，欲大则藏于天下，欲尚则凌于云气，欲下则入于深泉，变化无日，上下无时。”《说文·龙部》也云“龙，鳞虫之长，能幽能明，能细能巨，能短能长。春分而登天，秋分而潜渊。”这些记述与商周青铜器上龙纹复杂多变的形象是相合的。</p>
+
+<p>　　<strong>中新社记者：商周时期的青铜器纹饰为何多与龙相关，这反映了商周人怎样的观念和思想？</strong></p>
+
+<p>　　<strong>毕经纬：</strong>青铜器上的动物纹样是沟通人与神的媒介，这个媒介主要是幻想出来的龙，其他动物只是龙的辅助。原因在于：龙可大可小，可长可短，既可翱翔于九天之外，又可沉潜于九渊之下，具有变化万端、通天彻地的神性和能力，故而成为古人沟通天地的最好媒介。这一点也可以在战国时期的《人物御龙帛画》、马王堆汉墓出土的T形帛画以及《周易》《归藏》《山海经》等早期文献所记五帝乘龙升天之事得到印证。</p>
+
+<div class="img_wrapper"><img alt="湖南长沙马王堆汉墓出土T形帛画线图。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313093952.jpg" title="湖南长沙马王堆汉墓出土T形帛画线图。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">湖南长沙马王堆汉墓出土T形帛画线图。受访者供图</span></div>
+
+<p>　　除了青铜器装饰有大量龙纹外，商周时期的玉器、石器、骨器、象牙器等高规格礼器上也可以见到很多龙的形象。可以说，商周时期的龙纹实现了质的飞跃，成为当时装饰尤其是礼器装饰的统治性题材，在龙形象的发展史上具有里程碑式的意义。大量龙纹装饰在具有神圣意味的青铜礼器上，其形态变化之多、延续时间之长、所占比例之大，反映出龙在商周先民观念中无与伦比的重要性和神圣性，为之后龙成为中华民族的标识奠定了观念和思想基础。</p>
+
+<div class="img_wrapper"><img alt="安徽阜南台家寺出土商代中期青铜龙虎尊。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313094020.jpg" title="安徽阜南台家寺出土商代中期青铜龙虎尊。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">安徽阜南台家寺出土商代中期青铜龙虎尊。受访者供图</span></div>
+
+<div class="img_wrapper"><img alt="陕西扶风庄白窖藏出土西周中期青铜温鼎。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313094041.jpg" title="陕西扶风庄白窖藏出土西周中期青铜温鼎。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">陕西扶风庄白窖藏出土西周中期青铜温鼎。受访者供图</span></div>
+
+<p>　　<strong>中新社记者：商周青铜器上的龙纹蕴含着怎样的中华文明特征？</strong></p>
+
+<p>　　<strong>毕经纬：</strong>首先是连续性。中国的龙文化起源甚早，新石器时代早期就出现了成熟的龙形象，比如辽宁查海遗址兴隆洼文化时期的石块堆塑龙、湖南高庙遗址高庙文化陶器上的龙纹，还有河南濮阳西水坡遗址仰韶文化时期的蚌壳堆塑龙、湖北焦墩遗址大溪文化时期的卵石堆塑龙、内蒙古东南部和辽西地区的红山文化玉龙、山西陶寺遗址龙山文化时期的彩绘龙纹等。</p>
+
+<div class="img_wrapper"><img alt="内蒙古翁牛特旗三星他拉村出土红山文化玉龙。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313094104.jpg" title="内蒙古翁牛特旗三星他拉村出土红山文化玉龙。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">内蒙古翁牛特旗三星他拉村出土红山文化玉龙。受访者供图</span></div>
+
+<p>　　目前，二里头遗址已发现包括陶范、绿松石饰品、陶片在内的数十件龙纹器物。受到早期龙文化的强烈影响，商代青铜器上的兽面纹和夔龙纹，是龙纹在商代青铜器上的不同表现形式。西周早期青铜器、玉器上的龙纹延续了商代晚期的特征，依然十分流行；西周中期以后的龙纹盛行如故，只是在表现形式上有所变化。</p>
+
+<div class="img_wrapper"><img alt="河南偃师二里头出土夏代晚期绿松石龙形器。受访者供图" src="./BiJinWei_coiled_dragon_files/U995P10DT20240313094121.jpg" title="河南偃师二里头出土夏代晚期绿松石龙形器。受访者供图"></div>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "><span style="color: #888888;">河南偃师二里头出土夏代晚期绿松石龙形器。受访者供图</span></div>
+
+<p>　　其次是统一性。龙是想象中的动物，现实中并不存在，但自新石器时代起，中国的很多地方都出现了龙的形象，商周时期的龙形象数量更多、分布更加广泛，这说明龙作为一种精神上的信仰，至迟在商周时期就已形成广域上的文化认同，反映了中华文明具有突出的统一性。</p>
+
+<p>　　自兴隆洼文化查海堆塑龙至今，经过8000年左右的精神“滋养”，龙最终升华为中华民族的精神象征、文化标识、信仰载体和情感纽带，体现了中华文化的连续性和统一性。龙是中华文化史赓续不断的见证者，龙的历史是中华文明起源、传播与融合的历史，也是中华民族共同体形成的历史。</p>
+
+<p>　　<strong>受访者简介：</strong></p>
+
+<div class="pictext" style="text-align:left;text-indent:2em; "></div>
+
+<div class="img_wrapper"><img src="./BiJinWei_coiled_dragon_files/U995P10DT20240313094148.jpg"></div>
+
+<p>　　毕经纬，陕西师范大学历史文化学院教授、博士生导师，考古文博系主任、国际长安学研究院考古中心主任。主要从事夏商周考古与青铜器以及中西青铜文明比较方面的教学与研究工作。主持国家社科基金项目“海岱地区商周青铜器的整理与研究”(结项，优秀等级)、“中国古代青铜器发生学研究”(在研)，参与国家社科基金及国家文物局科研项目数项。出版《问道于器：海岱地区商周青铜器研究》等著作4部，在《历史研究》《考古学报》《考古》《光明日报》(理论版)等报刊发表论文40余篇。研究成果曾获陕西高校人文社会科学优秀成果一等奖、陕西省哲学社会科学优秀成果二等奖。</p>
+<p style="text-align: right;"><span style="color: #888888;"><span style="font-size: 12px;"><span style="color: #888888;">责任编辑：王雨蜻</span></span></span></p>
+				</div>
+				<!-- 相关推荐 -->
+			  <div class="about-recommend">
+					<div class="zx-title">
+						<span>相关推荐</span>
+					</div>
+					<ul>
+						<li><a href="https://www.shx.chinanews.com.cn/news/2024/0311/97649.html" target="_blank"><span class="dian">.</span>西安工大举办经典折子戏展演与戏曲文化体验活动</a></li><li><a href="https://www.shx.chinanews.com.cn/news/2024/0308/97596.html" target="_blank"><span class="dian">.</span>短视频时代，戏曲文化如何走近年轻人？</a></li><li><a href="https://www.shx.chinanews.com.cn/news/2024/0306/97537.html" target="_blank"><span class="dian">.</span>“文化陕西”旅游推介会在柏林中国文化中心举办</a></li><li><a href="https://www.shx.chinanews.com.cn/news/2024/0304/97466.html" target="_blank"><span class="dian">.</span>展现旺盛活力 彰显文化自信</a></li><li><a href="https://www.shx.chinanews.com.cn/news/2024/0304/97446.html" target="_blank"><span class="dian">.</span>超七成受访青年注重旅行中的“文化味儿”</a></li><li><a href="https://www.shx.chinanews.com.cn/news/2024/0302/97441.html" target="_blank"><span class="dian">.</span>最美油菜花海汉中旅游文化节推介发布会在西安举行</a></li>
+					</ul>
+				</div></div>
+			<div class="contain-right">
+				<!-- 中新视频 -->
+				<div class="zxsp-recommend">
+					<div class="zx-title"><a href="http://www.shx.chinanews.com.cn/zxsp.html">中新视频</a>
+					</div>
+				</div>
+				<div class="right-video">
+				<ul>
+                
+					<li>
+<a href="https://www.chinanews.com.cn/it/shipin/cns/2024/03-07/news984165.shtml" target="_blank">
+</a><div class="imgs"><a href="https://www.chinanews.com.cn/it/shipin/cns/2024/03-07/news984165.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2179F3253DT20240307151803.jpg">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>西北大学与香港大学共建地球与行星科学联合中心</p>
+</a>
+</div></li><li>
+<a href="http://www.chinanews.com.cn/sh/shipin/cns/2024/02-26/news983367.shtml" target="_blank">
+</a><div class="imgs"><a href="http://www.chinanews.com.cn/sh/shipin/cns/2024/02-26/news983367.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2173F3253DT20240227105938.jpg">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>坐着高铁看中国：法国女孩戴安娜的“奇妙之旅”</p>
+</a>
+</div></li><li>
+<a href="http://www.chinanews.com.cn/shipin/cns-d/2024/02-21/news982977.shtml" target="_blank">
+</a><div class="imgs"><a href="http://www.chinanews.com.cn/shipin/cns-d/2024/02-21/news982977.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2164F3253DT20240222095157.jpg">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>实拍陕西高速除雪保通</p>
+</a>
+</div></li><li>
+<a href="https://www.chinanews.com.cn/ty/shipin/cns/2024/02-10/news982345.shtml" target="_blank">
+</a><div class="imgs"><a href="https://www.chinanews.com.cn/ty/shipin/cns/2024/02-10/news982345.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2160F3253DT20240213100824.png">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>陕西西安：篮球迎新春 体育过大年</p>
+</a>
+</div></li><li>
+<a href="https://www.chinanews.com.cn/shipin/cns/2024/02-09/news982218.shtml" target="_blank">
+</a><div class="imgs"><a href="https://www.chinanews.com.cn/shipin/cns/2024/02-09/news982218.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2158F3253DT20240213100332.png">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>秦岭山中的“破冰者”</p>
+</a>
+</div></li><li>
+<a href="https://www.chinanews.com.cn/sh/shipin/cns-d/2024/02-08/news982125.shtml" target="_blank">
+</a><div class="imgs"><a href="https://www.chinanews.com.cn/sh/shipin/cns-d/2024/02-08/news982125.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/U995P10T80D2153F3253DT20240209093656.png">
+<img src="./BiJinWei_coiled_dragon_files/coin3.png" alt="" class="icon-play">
+<p>陕西：2023级秦岭大熊猫宝宝“出镜拜年”</p>
+</a>
+</div></li>
+				</ul>
+				</div>
+				
+				<!-- 图片新闻标题 -->
+			  <div class="zxsp-recommend"><div class="zx-title"><a href="https://www.chinanews.com.cn/photo/">图片新闻</a>
+					</div>
+				</div>
+				
+				<!-- 图片新闻内容 -->
+				<div class="news-title-img">
+                   <a href="https://www.chinanews.com.cn/tp/hd2011/2024/03-11/1099783.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/cdc75407fd584e0ba9df673082b0baf6.jpg">
+<p>二月二龙抬头 各地民俗活动热闹上演</p>
+</a>
+				</div>
+				<!-- 图片列表 -->
+			  <div class="right-video">
+				<ul>
+					 <li>
+<a href="https://www.chinanews.com.cn/tp/hd2011/2024/03-10/1099755.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/c27c5a1166d246b587b879bec5bd9856.jpg">
+<p>赏花正当时 打卡多地看秀丽春光</p>
+</a>
+</li>
+<li>
+<a href="https://www.chinanews.com.cn/tp/hd2011/2024/03-10/1099748.shtml" target="_blank">
+<img src="./BiJinWei_coiled_dragon_files/5031e2f5779942778fea805a5f0ef352.jpg">
+<p>金庸诞辰百年 浙江海宁故居焕新亮相</p>
+</a>
+</li>
+				</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+<div class="w1280 mt10">
+  <!--中新矩阵 e-->
+  <div class="clear"></div>
+  <div class="links2">友情链接：
+<a href="http://www.gov.cn/" target="_blank">中国政府网</a>
+<a href="http://www.shaanxi.gov.cn/" target="blank">陕西省人民政府</a>
+<a href="http://www.zgsxswtzb.gov.cn/" target="blank">陕西省委统战部</a>
+<a href="http://www.xa.gov.cn/" target="_blank">西安市人民政府</a>
+<a href="http://www.people.com.cn/" target="_blank">人民网</a>
+<a href="http://www.sn.xinhuanet.com/" target="_blank">新华网</a>
+<a href="http://www.cctv.com/" target="_blank">中央电视台</a>
+<a href="https://www.cnr.cn/" target="_blank">央广网</a>
+<a href="http://www.sxdaily.com.cn/" target="_blank">群众新闻网</a>
+<a href="http://www.cnwest.com/" target="_blank">西部网</a>
+<a href="http://epaper.xiancn.com/" target="_blank">西安日报</a>  
+<a href="http://www.hsw.cn/" target="_blank">华商网</a>
+<a href="https://xixinews.com/index.html" target="_blank">西西新闻</a>
+
+</div>
+</div>
+
+<div class="pagebottom">
+  <div class="pagebottom_nav">
+   <ul>
+        <li><a href="https://www.chinanews.com.cn/common/footer/intro.shtml" target="_blank">关于我们</a></li>
+        <li><a href="https://www.chinanews.com.cn/common/footer/aboutus.shtml" target="_blank">About us</a></li>
+        <li><a href="https://www.chinanews.com.cn/common/footer/contact.shtml" target="_blank">联系我们</a></li>
+        <li><a href="http://ad.chinanews.com/" target="_blank">广告服务</a></li>
+        <li><a href="https://www.chinanews.com.cn/common/footer/news-service.shtml" target="_blank">供稿服务</a></li>
+        <li><a href="https://www.chinanews.com.cn/common/footer/law.shtml" target="_blank">法律声明</a></li>
+        <li><a href="https://www.chinanews.com.cn/hr/" target="_blank">招聘信息</a></li>
+        <li><a href="https://www.chinanews.com.cn/common/footer/sitemap.shtml" target="_blank">网站地图</a></li>
+    </ul>
+  </div>
+  <div class="pagebottom_nr">
+    <div class="des">本网站所刊载信息，不代表中新社和中新网观点。 刊用本网站稿件，务经书面授权。</div>
+    <div class="des">未经授权禁止转载、摘编、复制及建立镜像，违者将依法追究法律责任。</div>
+  </div>
+
+  <div class="pagebottom_nr" style="padding-bottom:20px">
+    <div class="des">[<a href="https://www.shx.chinanews.com.cn/news/xuke.html">网上传播视听节目许可证(0106168)</a>] [<a href="https://beian.miit.gov.cn/">京ICP证040655号</a>] [
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202009201" style="display:inline-block;height:20px;line-height:20px;"><img src="./BiJinWei_coiled_dragon_files/ghs.png" style="float:left;">京公网安备 11010202009201号</a>] [<a href="https://beian.miit.gov.cn/">京ICP备05004340号-1</a>] [<a href="https://www.shx.chinanews.com.cn/news/zjxuke.html">互联网宗教信息服务许可证：京(2022)0000118；京(2022)0000119</a>]<br>违法和不良信息举报电话：15699788000 举报邮箱：jubao@chinanews.com.cn <a href="https://www.shx.chinanews.com.cn/kong/2018/01-17/8426100.shtml">举报受理和处置管理办法</a>  总机：86-10-87826688</div>
+    <div class="des">Copyright &#169;1999-2023 chinanews.com. All Rights Reserved</div>
+  </div>
+
+</div>
+<div style="display:none">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F985b74732c48e9bafecde50b6dd81d2b' type='text/javascript'%3E%3C/script%3E"));
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253038072'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1253038072' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="./BiJinWei_coiled_dragon_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=985b74732c48e9bafecde50b6dd81d2b" target="_blank"><img border="0" src="./BiJinWei_coiled_dragon_files/21.gif" width="20" height="20"></a><span id="cnzz_stat_icon_1253038072"></span><script src="./BiJinWei_coiled_dragon_files/z_stat.php" type="text/javascript"></script><script src="./BiJinWei_coiled_dragon_files/h(1).js" type="text/javascript"></script>
+    </div> 
+
+<script src="./BiJinWei_coiled_dragon_files/jquery.SuperSlide.2.1.3.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		function submitFun(hotwords) {
+			var date = new Date();
+			var hotword = "" || hotwords;
+			if (hotword != "") {
+				window.open("http://searchnews.chinanews.com/search.do?q=" + encodeURIComponent(hotword) + "&dbtype=sc");
+			}
+			return false;
+		}
+		function showTime() {
+			var today = new Date();
+			var weekday = new Array(7)
+			weekday[0] = "星期日"
+			weekday[1] = "星期一"
+			weekday[2] = "星期二"
+			weekday[3] = "星期三"
+			weekday[4] = "星期四"
+			weekday[5] = "星期五"
+			weekday[6] = "星期六"
+			var y = today.getFullYear() + "年";
+			var month = today.getMonth() + 1 + "月";
+			var td = today.getDate() + "日";
+			var d = weekday[today.getDay()];
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			var span1 = document.getElementById('dataeTime1')
+			span1.innerHTML = (y + month + td);
+			var span2 = document.getElementById('dataeTime2')
+			span2.innerHTML = (d);
+		}
+		showTime();
+		// 兼容ie
+		$(".search").click(placeholder)
+
+		function placeholder() {
+			$('#placeHeader').hide();
+			$(".search-cont").focus();
+		}
+		$(".search-cont").blur(function() {
+			if (!$(this).val()) {
+				$('#placeHeader').show();
+			}
+		})
+		// 广告
+		// 
+		function searchStr(e) {
+			var ev = e || window.event;
+			window.event ? ev.cancelBubble = true : ev.stopPropagation();
+			var value=$(".search-cont").val();
+			submitFun(value)
+		}
+		// 排行
+		$(".list-name ul li").each(function(i){
+			var url='',title='',num=i+1;
+			url = $(this).find("a").attr('href')
+			title = $(this).find("a").attr('title')
+		    if(i<=3){
+				$(this).html('<a href="'+url+'"><div class="square on" title="'+title+'">'+num+'</div><div class="list-name-font">'+title+"</div></a>")
+		    }else{
+				$(this).html('<a href="'+url+'"><div class="square" title="'+title+'">'+num+'</div><div class="list-name-font">'+title+"</div></a>")
+			}
+		 });
+	</script>
+   
+
+<script src="./BiJinWei_coiled_dragon_files/jweixin-1.6.0.js"></script>
+<script src="./BiJinWei_coiled_dragon_files/wxshare.js"></script>
+<script>
+  $(function(){
+    var useragent = navigator.userAgent;
+    if(useragent.indexOf('MicroMessenger')> -1){
+      var share_title = "毕经纬：商周青铜器龙纹蕴藏着何种文化内涵？";
+      var share_desc = "来自中国新闻网";
+
+      var share_url = window.location.href.split('#')[0];
+      var share_img = "http://image.cns.com.cn/xinjiang_editor/transform/20220117/piqC-ucvsvnw3239482.png";
+
+      wxshare(share_title,share_desc,share_img,share_url,"shx",false,false); //哪家公众号;微信接口中是不是debug;是否使用测试lc接口
+    }
+})</script> 
+
+
+</body></html>

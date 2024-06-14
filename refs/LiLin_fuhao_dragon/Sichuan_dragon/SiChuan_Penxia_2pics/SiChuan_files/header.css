@@ -1,0 +1,188 @@
+.isPc .mainT { height: 117px; }
+
+.isPc .tlBox {
+  padding-top: 25px;
+  width: 270px;
+}
+
+.isPc .tlBox .txt7_top {
+  display: inline;
+  width: 100%;
+  line-height: 30px;
+  float: left;
+  margin-left: 0px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  padding-right: 0px;
+}
+
+.isPc .tlBox span a {
+  line-height: 30px;
+  display: block;
+  height: 30px;
+  float: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0;
+}
+
+.isPc .tlBox span i {
+  float: left;
+  margin: 0 18px;
+  color: #999999;
+  font-style: normal;
+}
+
+.isPc .tlBox .search {
+  width: 225px;
+  height: 30px;
+  border: 1px solid #bbbbbb;
+  border-radius: 40px;
+  margin-top: 0px;
+  float: right;
+}
+
+.isPc .tlBox .sInner {
+  padding: 0px 45px 0px 0px;
+  position: relative;
+  width: auto;
+  height: auto;
+  background: none;
+  margin: 0;
+}
+
+.isPc .tlBox .sInner input {
+  border: none;
+  background: none;
+  margin: 0px;
+  height: 24px;
+  line-height: 24px;
+  width: 100%;
+  padding: 3px 5px 3px 15px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.isPc .tlBox .inp_go {
+  float: none;
+  position: absolute;
+  margin: 0;
+  width: 40px;
+  height: 30px;
+  top: 0px;
+  right: 0px;
+  background: url(../i/magn_ico.png) no-repeat center;
+  background-size: 16px 16px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.isPc .navBox {
+  opacity: 1;
+}
+
+.isWap .mainT, .isWap .mainT_2 {
+  padding: 0.2rem 0 0.2rem 0.2rem;
+  margin-bottom: 0;
+}
+
+.isWap .bwBt3 {
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  padding-right: 3rem;
+  text-align: left;
+}
+
+.isWap .bwBt3 h3 {
+  width: 100%;
+  height: 1.18rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.isWap .bwBt3 h3 img {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+.isWap .wap_search {
+  margin: 0;
+  width: 0.68rem;
+  height: 0.68rem;
+  font-size: 0px;
+  line-height: 0px;
+  top: 0.4rem;
+  right: 0.8rem;
+  background: url(../img/fdj4.png) no-repeat center;
+  background-size: 0.45rem 0.45rem;
+}
+
+.isWap .menuLink {
+  width: 0.68rem;
+  height: 0.68rem;
+  background-size: auto 0.4rem;
+  top: 0.4rem;
+  right: 0.1rem;
+}
+
+.isWap .tlBox {
+  background: rgb(15, 76, 129);
+  position: absolute;
+  top: 1.6rem;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 0.28rem 0px;
+  border: none;
+}
+
+.isWap .tlBox .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.isWap .back {
+  margin: 0;
+  height: auto;
+}
+
+.isWap .tlBox .sInner {
+  margin: 0;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.isWap .tlBox .sInner form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.isWap .tlBox .sInner input {
+  font-size: 0.24rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: none;
+}
+
+.isWap .tlBox .inp_go {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0;
+  float: none;
+  background: url(../img/fdj4.png) no-repeat center center;
+  background-size: 0.3rem 0.3rem;
+}

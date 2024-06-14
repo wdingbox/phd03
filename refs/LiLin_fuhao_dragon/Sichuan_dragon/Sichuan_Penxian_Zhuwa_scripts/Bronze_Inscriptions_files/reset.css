@@ -1,0 +1,101 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, p, span, strong, img, form, ul, li, a, table, tr, td, dl, dt, dd { margin: 0; padding: 0; } 
+body{ 
+    font: normal 14px/1.5 '微软雅黑'; 
+    /*background: #f0f0f0; */
+    background: url(../images/bg3.png) repeat center;
+    font-family: Arial,"Lucida Grande",Verdana,"Microsoft YaHei",Arial;
+}
+h1, h2, h3, h4,h5, /*p,*/ a,/*span,*/em,b,input,textarea, i,button{ font-family: '微软雅黑'; }
+html,body { width:100%;}
+img{max-width: 100%;vertical-align: middle;}
+footer, header, nav, section, main, aside { display: block; }
+a{ text-decoration: none; border: none; }
+a:focus{ -moz-outline-style: none; outline: none; }
+ul li{ list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+i{ font-style: normal; }
+ul{ margin-bottom: 0;}
+input, select { vertical-align: middle;outline: none;border: none; }
+h1, h2, h3{ margin-top: 0;margin-bottom: 0; }
+textarea { overflow: auto; resize: none; }
+a, button { cursor: pointer; }
+a:hover { text-decoration: none; }
+select::-ms-expand { display: none; } 
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+::-webkit-input-placeholder { color: #7c7c7c; } 
+::-moz-placeholder { color: #7c7c7c; } 
+::-moz-placeholder {color: #7c7c7c; } 
+::-ms-input-placeholder {  color: #7c7c7c; } 
+input:focus{ border: none;outline: none; }
+
+
+@font-face {
+    font-family: 'source';
+    /*src: url('SOURCEHANSERIFCN-REGULAR.OTF');*/
+    src: url('SourceHanSerifSC-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('NotoSerifCJK-SemiBold.ttc');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'kxzd';
+    src: url('TypeLand 康熙字典體.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+/*字体图标*/
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{ box-sizing: border-box; }
+/*浮动*/
+.fl { float: left; }
+.fr { float: right; }
+
+/*清除浮动*/
+.clearfix:after {
+    height: 0;
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+.clearfix { zoom: 1; }
+* html .clearfix { zoom: 1; }
+
