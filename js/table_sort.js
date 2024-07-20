@@ -1,5 +1,5 @@
-
-
+// rapid table sort
+// rapid_table_sort
 function table_enable_sort(tbid) {
 
     if (!tbid) {
